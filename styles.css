@@ -1,0 +1,35 @@
+header {
+    text-align: center;
+    background-color: rgb(255, 0, 242);
+    color: white;
+}
+
+nav {
+    float: right;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(255, 0, 221);
+}
+
+#wrapper {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+main {
+    text-align: justify;
+}
+
+a:hover {
+    color: green;
+}
+
+a:visited {
+    color: red;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(255, 0, 221);
+    color: white;
+}
