@@ -1,35 +1,170 @@
-header {
-    text-align: center;
-    background-color: rgb(255, 0, 242);
-    color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 50px;
+}
+
+/* HEADINGS */
+h1, h2 {
+  margin: 20px 0 10px;
+  transition: 0.3s;
+}
+
+h1:hover,
+h2:hover {
+  color: #d7ff26;
+  transform: scale(1.05);
+}
+
+/* PARAGRAPHS */
+p {
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+/* NAVIGATION */
 nav {
-    float: right;
-    margin: 5px;
-    padding: 5px;
-    background-color: rgb(255, 0, 221);
+  background-color: #222;
+  padding: 12px;
 }
 
-#wrapper {
-    margin-left: 150px;
-    margin-right: 150px;
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-main {
-    text-align: justify;
+nav a:hover {
+  color: #d2ee31;
+  transform: scale(1.1);
+  text-decoration: underline;
 }
 
-a:hover {
-    color: green;
+nav a.active {
+  color: #5fbaff;
+  border-bottom: 2px solid #5fbaff;
 }
 
-a:visited {
-    color: red;
+/* LOGO */
+.logo {
+  display: block;
+  margin: 20px auto;
+  width: 100px;
+  transition: 0.3s;
 }
 
+.logo:hover {
+  transform: rotate(360deg) scale(1.5);
+}
+
+/* IMAGES */
+img.content-img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin: 15px 0;
+  transition: 0.3s ease;
+}
+
+img.content-img:hover {
+  filter: brightness(1.2);
+  transform: scale(1.05);
+}
+
+/* SECTIONS */
+section {
+  padding: 12px;
+  transition: 0.3s ease;
+}
+
+section:hover {
+  background-color: #fff;
+  transform: translateY(-4px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* TABLES */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background-color: #444;
+  color: #fff;
+}
+
+tbody tr:hover {
+  background-color: #e9f2ff;
+  transform: scale(1.01);
+
+}
+
+/* social icons */
+.social-icons {
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.fb, .ig {
+  display: inline-block;
+  background-image: url('ib.jfif');
+  background-size: 160px 180px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* fb icon */
+.fb {
+  background-position: 0px 0px;
+  width: 40px;
+  height: 40px;
+}
+
+/* ig icon */
+.ig {
+  background-position: -61px 0px;
+  width: 40px;
+  height: 40px;
+}
+
+/* hover for icons */
+.fb:hover, .ig:hover {
+  transform: rotate(360deg) scale(2.0);
+}
+
+/* FOOTER */
 footer {
-    text-align: center;
-    background-color: rgb(255, 0, 221);
-    color: white;
+  background-color: #222;
+  color: white;
+  padding: 15px;
+  font-size: 13px;
+  margin-top: 30px;
+  transition: 0.3s ease;
+}
+
+footer:hover {
+  background-color: #333;
 }
